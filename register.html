@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire d'inscription pour le programme Autonuma">
+    <title>Inscrire Mon Enfant - Autonuma</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre feuille de style CSS -->
+</head>
+<body>
+    <header>
+        <h1>Inscrire Mon Enfant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Nos Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="registration-form">
+        <div class="container">
+            <h2>Formulaire d'Inscription</h2>
+            <form action="process_registration.php" method="post">
+                <label for="child-name">Nom de l'Enfant:</label>
+                <input type="text" id="child-name" name="child-name" required>
+                
+                <label for="child-age">Âge de l'Enfant:</label>
+                <input type="number" id="child-age" name="child-age" required>
+                
+                <label for="parent-name">Nom du Parent:</label>
+                <input type="text" id="parent-name" name="parent-name" required>
+                
+                <label for="email">Adresse Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Numéro de Téléphone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label>Services Intéressants:</label>
+                <div class="services">
+                    <label><input type="checkbox" name="services[]" value="Compétences Numériques"> Compétences Numériques</label>
+                    <label><input type="checkbox" name="services[]" value="Entrepreneuriat"> Entrepreneuriat</label>
+                    <label><input type="checkbox" name="services[]" value="Coaching Scolaire"> Coaching Scolaire</label>
+                </div>
+                
+                <label for="message">Message (optionnel):</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                
+                <input type="submit" value="Soumettre">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Autonuma. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
